@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+:root {
+  --main-bg-color: #fff;
+}
+
+body {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  background: var(--main-bg-color);
+  color: #f3f3f3;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body .background {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 1;
+  z-index: -1;
+}
+
+#quote-box {
+  text-align: center;
+  background-color: #1111119e;
+  border-radius: 5px;
+  max-width: 550px;
+  margin: auto;
+  padding: 1.3em;
+  opacity: 0.9;
+}
+#quote-box .quote-category {
+  border-bottom: solid 1px #bfbfbf40;
+  font-weight: 300;
+  padding: 0 0 1em 0;
+}
+#quote-box .quote-text {
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  padding: 1em 2em 0 2em;
+  -webkit-filter: brightness(1.8);
+  -moz-filter: brightness(1.8);
+  -o-filter: brightness(1.8);
+  -ms-filter: brightness(1.8);
+  filter: brightness(1.8);
+}
+#quote-box .quote-author {
+  font-family: "Handlee", cursive;
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: 300;
+  padding: 1em;
+  text-align: right;
+  color: #f3f3f3;
+}
+#quote-box .quote-author #author::before {
+  content: " - ";
+}
+#quote-box .quote-author #author::after {
+  content: " - ";
+}
+#quote-box .quote-buttons {
+  border-radius: 5px;
+  text-align: right;
+  padding: 1em;
+}
+#quote-box .quote-buttons .button {
+  display: inline-block;
+  background-color: #111;
+  border-radius: 5px;
+  color: #f3f3f3;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.8em 1em;
+  vertical-align: middle;
+  border: none;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#quote-box .quote-buttons .button:hover {
+  opacity: 1;
+}
+#quote-box .quote-buttons .button .button-text {
+  -webkit-filter: brightness(1.5);
+  -moz-filter: brightness(1.5);
+  -o-filter: brightness(1.5);
+  -ms-filter: brightness(1.5);
+  filter: brightness(1.5);
+}
